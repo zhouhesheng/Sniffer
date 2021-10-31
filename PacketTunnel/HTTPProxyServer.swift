@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import CocoaAsyncSocket
 
 class HTTPProxyServer: NSObject {
     

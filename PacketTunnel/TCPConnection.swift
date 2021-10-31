@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import CocoaAsyncSocket
 import ZPTCPIPStack
 
 class TCPConnection: NSObject {

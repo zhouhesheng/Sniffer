@@ -29,8 +29,8 @@ class PacketTunnelProvider: NEPacketTunnelProvider {
         /* tcp */
         self.tcpProxy = TCPProxyServer()
         self.tcpProxy!.server.ipv4Setting(
-            withAddress: tunnelSettings.iPv4Settings!.addresses[0],
-            netmask: tunnelSettings.iPv4Settings!.subnetMasks[0]
+            withAddress: tunnelSettings.ipv4Settings!.addresses[0],
+            netmask: tunnelSettings.ipv4Settings!.subnetMasks[0]
         )
         self.tcpProxy!.server.mtu(tunnelSettings.mtu!.uint16Value) { datas, numbers in
             guard
@@ -128,7 +128,7 @@ class PacketTunnelProvider: NEPacketTunnelProvider {
             NEIPv4Route(destinationAddress: "10.0.0.0", subnetMask: "255.0.0.0"),
             NEIPv4Route(destinationAddress: "172.16.0.0", subnetMask: "255.240.0.0")
         ]
-        settings.iPv4Settings = ipv4Settings
+        settings.ipv4Settings = ipv4Settings
         
         /* MTU */
         settings.mtu = NSNumber(value: UINT16_MAX)

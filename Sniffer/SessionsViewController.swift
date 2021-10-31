@@ -31,14 +31,14 @@ class SessionsViewController: UIViewController {
         )
         
         self.tableView.estimatedRowHeight = 100
-        self.tableView.rowHeight = UITableViewAutomaticDimension
+        self.tableView.rowHeight = UITableView.automaticDimension
         
         self.dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss ZZZZZ"
         
         self.refresh()
     }
     
-    func refresh() {
+    @objc func refresh() {
         guard let tpm: NETunnelProviderManager = TunnelManager.tpm else {
             UIAlertController.showErrorAlert(
                 target: self,
