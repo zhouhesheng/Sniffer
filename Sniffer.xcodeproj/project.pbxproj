@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		B2C21EA5272ED493008DC1F5 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C21EA1272ED493008DC1F5 /* GCDAsyncUdpSocket.m */; };
 		B2C21EA6272ED493008DC1F5 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C21EA2272ED493008DC1F5 /* GCDAsyncSocket.m */; };
-		B2C21FBF272EDAC5008DC1F5 /* ZPTCPIPStack.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C21FBE272EDAC5008DC1F5 /* ZPTCPIPStack.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B2C21FC2272EDAC5008DC1F5 /* ZPTCPIPStack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2C21FBC272EDAC5008DC1F5 /* ZPTCPIPStack.framework */; };
 		B2C21FC3272EDAC5008DC1F5 /* ZPTCPIPStack.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B2C21FBC272EDAC5008DC1F5 /* ZPTCPIPStack.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B2C22050272EDB27008DC1F5 /* ZPPacketTunnel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C21FC9272EDB27008DC1F5 /* ZPPacketTunnel.m */; };
@@ -45,96 +44,10 @@
 		B2C2206E272EDB27008DC1F5 /* inet6.c in Sources */ = {isa = PBXBuildFile; fileRef = B2C21FEB272EDB27008DC1F5 /* inet6.c */; };
 		B2C2206F272EDB27008DC1F5 /* ip6_addr.c in Sources */ = {isa = PBXBuildFile; fileRef = B2C21FEC272EDB27008DC1F5 /* ip6_addr.c */; };
 		B2C22070272EDB27008DC1F5 /* ip6_frag.c in Sources */ = {isa = PBXBuildFile; fileRef = B2C21FED272EDB27008DC1F5 /* ip6_frag.c */; };
-		B2C22071272EDB27008DC1F5 /* pbuf.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C21FF0272EDB27008DC1F5 /* pbuf.h */; };
-		B2C22072272EDB27008DC1F5 /* tcp.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C21FF1272EDB27008DC1F5 /* tcp.h */; };
-		B2C22073272EDB27008DC1F5 /* nd6.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C21FF2272EDB27008DC1F5 /* nd6.h */; };
-		B2C22074272EDB28008DC1F5 /* err.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C21FF3272EDB27008DC1F5 /* err.h */; };
-		B2C22075272EDB28008DC1F5 /* etharp.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C21FF4272EDB27008DC1F5 /* etharp.h */; };
-		B2C22076272EDB28008DC1F5 /* igmp.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C21FF5272EDB27008DC1F5 /* igmp.h */; };
-		B2C22077272EDB28008DC1F5 /* netif.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C21FF6272EDB27008DC1F5 /* netif.h */; };
-		B2C22078272EDB28008DC1F5 /* debug.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C21FF7272EDB27008DC1F5 /* debug.h */; };
-		B2C22079272EDB28008DC1F5 /* ethip6.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C21FF8272EDB27008DC1F5 /* ethip6.h */; };
-		B2C2207A272EDB28008DC1F5 /* ip4.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C21FF9272EDB27008DC1F5 /* ip4.h */; };
-		B2C2207B272EDB28008DC1F5 /* icmp.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C21FFA272EDB27008DC1F5 /* icmp.h */; };
-		B2C2207C272EDB28008DC1F5 /* timeouts.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C21FFB272EDB27008DC1F5 /* timeouts.h */; };
-		B2C2207D272EDB28008DC1F5 /* snmp.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C21FFC272EDB27008DC1F5 /* snmp.h */; };
-		B2C2207E272EDB28008DC1F5 /* ip4_frag.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C21FFD272EDB27008DC1F5 /* ip4_frag.h */; };
-		B2C2207F272EDB28008DC1F5 /* ip6_addr.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C21FFE272EDB27008DC1F5 /* ip6_addr.h */; };
-		B2C22080272EDB28008DC1F5 /* inet.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C21FFF272EDB27008DC1F5 /* inet.h */; };
-		B2C22081272EDB28008DC1F5 /* ip6_frag.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C22000272EDB27008DC1F5 /* ip6_frag.h */; };
-		B2C22082272EDB28008DC1F5 /* ip4_addr.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C22001272EDB27008DC1F5 /* ip4_addr.h */; };
-		B2C22083272EDB28008DC1F5 /* dhcp.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C22002272EDB27008DC1F5 /* dhcp.h */; };
-		B2C22084272EDB28008DC1F5 /* autoip.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C22003272EDB27008DC1F5 /* autoip.h */; };
-		B2C22085272EDB28008DC1F5 /* memp.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C22004272EDB27008DC1F5 /* memp.h */; };
-		B2C22086272EDB28008DC1F5 /* tcp.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C22006272EDB27008DC1F5 /* tcp.h */; };
-		B2C22087272EDB28008DC1F5 /* nd6.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C22007272EDB27008DC1F5 /* nd6.h */; };
-		B2C22088272EDB28008DC1F5 /* etharp.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C22008272EDB27008DC1F5 /* etharp.h */; };
-		B2C22089272EDB28008DC1F5 /* igmp.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C22009272EDB27008DC1F5 /* igmp.h */; };
-		B2C2208A272EDB28008DC1F5 /* ip4.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C2200A272EDB27008DC1F5 /* ip4.h */; };
-		B2C2208B272EDB28008DC1F5 /* icmp.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C2200B272EDB27008DC1F5 /* icmp.h */; };
-		B2C2208C272EDB28008DC1F5 /* ethernet.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C2200C272EDB27008DC1F5 /* ethernet.h */; };
-		B2C2208D272EDB28008DC1F5 /* dhcp.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C2200D272EDB27008DC1F5 /* dhcp.h */; };
-		B2C2208E272EDB28008DC1F5 /* autoip.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C2200E272EDB27008DC1F5 /* autoip.h */; };
-		B2C2208F272EDB28008DC1F5 /* ip6.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C2200F272EDB27008DC1F5 /* ip6.h */; };
-		B2C22090272EDB28008DC1F5 /* icmp6.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C22010272EDB27008DC1F5 /* icmp6.h */; };
-		B2C22091272EDB28008DC1F5 /* ip.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C22011272EDB27008DC1F5 /* ip.h */; };
-		B2C22092272EDB28008DC1F5 /* udp.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C22012272EDB27008DC1F5 /* udp.h */; };
-		B2C22093272EDB28008DC1F5 /* mld6.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C22013272EDB27008DC1F5 /* mld6.h */; };
-		B2C22094272EDB28008DC1F5 /* nd6_priv.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C22015272EDB27008DC1F5 /* nd6_priv.h */; };
-		B2C22095272EDB28008DC1F5 /* tcp_priv.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C22016272EDB27008DC1F5 /* tcp_priv.h */; };
-		B2C22096272EDB28008DC1F5 /* memp_priv.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C22017272EDB27008DC1F5 /* memp_priv.h */; };
-		B2C22097272EDB28008DC1F5 /* memp_std.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C22018272EDB27008DC1F5 /* memp_std.h */; };
-		B2C22098272EDB28008DC1F5 /* ip_addr.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C22019272EDB27008DC1F5 /* ip_addr.h */; };
-		B2C22099272EDB28008DC1F5 /* opt.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C2201A272EDB27008DC1F5 /* opt.h */; };
-		B2C2209A272EDB28008DC1F5 /* inet_chksum.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C2201B272EDB27008DC1F5 /* inet_chksum.h */; };
-		B2C2209B272EDB28008DC1F5 /* ip6.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C2201C272EDB27008DC1F5 /* ip6.h */; };
-		B2C2209C272EDB28008DC1F5 /* sys.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C2201D272EDB27008DC1F5 /* sys.h */; };
-		B2C2209D272EDB28008DC1F5 /* errno.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C2201E272EDB27008DC1F5 /* errno.h */; };
-		B2C2209E272EDB28008DC1F5 /* def.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C2201F272EDB27008DC1F5 /* def.h */; };
-		B2C2209F272EDB28008DC1F5 /* mem.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C22020272EDB27008DC1F5 /* mem.h */; };
-		B2C220A0272EDB28008DC1F5 /* icmp6.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C22021272EDB27008DC1F5 /* icmp6.h */; };
-		B2C220A1272EDB28008DC1F5 /* ip.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C22022272EDB27008DC1F5 /* ip.h */; };
-		B2C220A2272EDB28008DC1F5 /* init.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C22023272EDB27008DC1F5 /* init.h */; };
-		B2C220A3272EDB28008DC1F5 /* dhcp6.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C22024272EDB27008DC1F5 /* dhcp6.h */; };
-		B2C220A4272EDB28008DC1F5 /* sntp.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C22026272EDB27008DC1F5 /* sntp.h */; };
-		B2C220A5272EDB28008DC1F5 /* snmp_opts.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C22027272EDB27008DC1F5 /* snmp_opts.h */; };
-		B2C220A6272EDB28008DC1F5 /* httpd.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C22028272EDB27008DC1F5 /* httpd.h */; };
-		B2C220A7272EDB28008DC1F5 /* snmp_scalar.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C22029272EDB27008DC1F5 /* snmp_scalar.h */; };
-		B2C220A8272EDB28008DC1F5 /* snmpv3.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C2202A272EDB27008DC1F5 /* snmpv3.h */; };
-		B2C220A9272EDB28008DC1F5 /* netbiosns_opts.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C2202B272EDB27008DC1F5 /* netbiosns_opts.h */; };
-		B2C220AA272EDB28008DC1F5 /* tftp_opts.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C2202C272EDB27008DC1F5 /* tftp_opts.h */; };
-		B2C220AB272EDB28008DC1F5 /* snmp_mib2.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C2202D272EDB27008DC1F5 /* snmp_mib2.h */; };
-		B2C220AC272EDB28008DC1F5 /* mdns.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C2202E272EDB27008DC1F5 /* mdns.h */; };
-		B2C220AD272EDB28008DC1F5 /* netbiosns.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C2202F272EDB27008DC1F5 /* netbiosns.h */; };
-		B2C220AE272EDB28008DC1F5 /* snmp_core.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C22030272EDB27008DC1F5 /* snmp_core.h */; };
-		B2C220AF272EDB28008DC1F5 /* tftp_server.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C22031272EDB27008DC1F5 /* tftp_server.h */; };
-		B2C220B0272EDB28008DC1F5 /* snmp.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C22032272EDB27008DC1F5 /* snmp.h */; };
-		B2C220B1272EDB28008DC1F5 /* snmp_table.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C22033272EDB27008DC1F5 /* snmp_table.h */; };
-		B2C220B2272EDB28008DC1F5 /* httpd_opts.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C22034272EDB27008DC1F5 /* httpd_opts.h */; };
-		B2C220B3272EDB28008DC1F5 /* lwiperf.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C22035272EDB27008DC1F5 /* lwiperf.h */; };
-		B2C220B4272EDB28008DC1F5 /* mdns_priv.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C22036272EDB27008DC1F5 /* mdns_priv.h */; };
-		B2C220B5272EDB28008DC1F5 /* mqtt_opts.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C22037272EDB27008DC1F5 /* mqtt_opts.h */; };
-		B2C220B6272EDB28008DC1F5 /* mqtt.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C22038272EDB27008DC1F5 /* mqtt.h */; };
-		B2C220B7272EDB28008DC1F5 /* snmp_threadsync.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C22039272EDB27008DC1F5 /* snmp_threadsync.h */; };
-		B2C220B8272EDB28008DC1F5 /* mdns_opts.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C2203A272EDB27008DC1F5 /* mdns_opts.h */; };
-		B2C220B9272EDB28008DC1F5 /* fs.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C2203B272EDB27008DC1F5 /* fs.h */; };
-		B2C220BA272EDB28008DC1F5 /* sntp_opts.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C2203C272EDB27008DC1F5 /* sntp_opts.h */; };
-		B2C220BB272EDB28008DC1F5 /* stats.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C2203D272EDB27008DC1F5 /* stats.h */; };
-		B2C220BC272EDB28008DC1F5 /* udp.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C2203E272EDB27008DC1F5 /* udp.h */; };
-		B2C220BD272EDB28008DC1F5 /* arch.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C2203F272EDB27008DC1F5 /* arch.h */; };
-		B2C220BE272EDB28008DC1F5 /* mld6.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C22040272EDB27008DC1F5 /* mld6.h */; };
-		B2C220BF272EDB28008DC1F5 /* etharp.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C22042272EDB27008DC1F5 /* etharp.h */; };
-		B2C220C0272EDB28008DC1F5 /* lowpan6.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C22043272EDB27008DC1F5 /* lowpan6.h */; };
-		B2C220C1272EDB28008DC1F5 /* lowpan6_opts.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C22044272EDB27008DC1F5 /* lowpan6_opts.h */; };
-		B2C220C2272EDB28008DC1F5 /* ethernet.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C22045272EDB27008DC1F5 /* ethernet.h */; };
-		B2C220C3272EDB28008DC1F5 /* cc.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C22047272EDB27008DC1F5 /* cc.h */; };
-		B2C220C4272EDB28008DC1F5 /* lwipopts.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C22048272EDB27008DC1F5 /* lwipopts.h */; };
 		B2C220C5272EDB28008DC1F5 /* ZPTCPConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C22049272EDB27008DC1F5 /* ZPTCPConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B2C220C6272EDB28008DC1F5 /* ZPPacketTunnelEx.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C2204A272EDB27008DC1F5 /* ZPPacketTunnelEx.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B2C220C8272EDB28008DC1F5 /* lwIP.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C2204C272EDB27008DC1F5 /* lwIP.h */; };
 		B2C220C9272EDB28008DC1F5 /* ZPPacketTunnel.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C2204D272EDB27008DC1F5 /* ZPPacketTunnel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B2C220CA272EDB28008DC1F5 /* ZPTCPConnectionEx.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C2204E272EDB27008DC1F5 /* ZPTCPConnectionEx.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B2C220CB272EDB28008DC1F5 /* ZPTCPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C2204F272EDB27008DC1F5 /* ZPTCPConnection.m */; };
+		B2C220CE272EE3D6008DC1F5 /* ZPTCPIPStack.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C2204B272EDB27008DC1F5 /* ZPTCPIPStack.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D321A2A61F63E26D005F447F /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D321A2A51F63E26D005F447F /* NetworkExtension.framework */; };
 		D321A2A71F63E285005F447F /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D321A2A51F63E26D005F447F /* NetworkExtension.framework */; };
 		D35240041F4BD090006656F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35240031F4BD090006656F0 /* AppDelegate.swift */; };
@@ -216,7 +129,6 @@
 		B2C21EA4272ED493008DC1F5 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
 		B2C21EA7272ED4E8008DC1F5 /* PacketTunnel-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PacketTunnel-Bridging-Header.h"; sourceTree = "<group>"; };
 		B2C21FBC272EDAC5008DC1F5 /* ZPTCPIPStack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZPTCPIPStack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B2C21FBE272EDAC5008DC1F5 /* ZPTCPIPStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPTCPIPStack.h; sourceTree = "<group>"; };
 		B2C21FC9272EDB27008DC1F5 /* ZPPacketTunnel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPPacketTunnel.m; sourceTree = "<group>"; };
 		B2C21FCC272EDB27008DC1F5 /* memp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = memp.c; sourceTree = "<group>"; };
 		B2C21FCD272EDB27008DC1F5 /* sys.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sys.c; sourceTree = "<group>"; };
@@ -402,14 +314,6 @@
 				B2C21EA4272ED493008DC1F5 /* GCDAsyncSocket.h */,
 			);
 			path = GCDAsyncSocket;
-			sourceTree = "<group>";
-		};
-		B2C21FBD272EDAC5008DC1F5 /* ZPTCPIPStack */ = {
-			isa = PBXGroup;
-			children = (
-				B2C21FBE272EDAC5008DC1F5 /* ZPTCPIPStack.h */,
-			);
-			path = ZPTCPIPStack;
 			sourceTree = "<group>";
 		};
 		B2C21FC8272EDB27008DC1F5 /* ZPTCPIPStack */ = {
@@ -637,7 +541,6 @@
 				B2C21FC8272EDB27008DC1F5 /* ZPTCPIPStack */,
 				D35240021F4BD090006656F0 /* Sniffer */,
 				D352401A1F4BD0E5006656F0 /* PacketTunnel */,
-				B2C21FBD272EDAC5008DC1F5 /* ZPTCPIPStack */,
 				D35240011F4BD090006656F0 /* Products */,
 				D35240291F4BE259006656F0 /* Frameworks */,
 			);
@@ -711,97 +614,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2C220B5272EDB28008DC1F5 /* mqtt_opts.h in Headers */,
-				B2C220C6272EDB28008DC1F5 /* ZPPacketTunnelEx.h in Headers */,
+				B2C220CE272EE3D6008DC1F5 /* ZPTCPIPStack.h in Headers */,
 				B2C220C9272EDB28008DC1F5 /* ZPPacketTunnel.h in Headers */,
-				B2C21FBF272EDAC5008DC1F5 /* ZPTCPIPStack.h in Headers */,
 				B2C220C5272EDB28008DC1F5 /* ZPTCPConnection.h in Headers */,
-				B2C220CA272EDB28008DC1F5 /* ZPTCPConnectionEx.h in Headers */,
-				B2C220B7272EDB28008DC1F5 /* snmp_threadsync.h in Headers */,
-				B2C220B0272EDB28008DC1F5 /* snmp.h in Headers */,
-				B2C22098272EDB28008DC1F5 /* ip_addr.h in Headers */,
-				B2C22088272EDB28008DC1F5 /* etharp.h in Headers */,
-				B2C2208C272EDB28008DC1F5 /* ethernet.h in Headers */,
-				B2C2209D272EDB28008DC1F5 /* errno.h in Headers */,
-				B2C220A6272EDB28008DC1F5 /* httpd.h in Headers */,
-				B2C220A2272EDB28008DC1F5 /* init.h in Headers */,
-				B2C2208B272EDB28008DC1F5 /* icmp.h in Headers */,
-				B2C2207D272EDB28008DC1F5 /* snmp.h in Headers */,
-				B2C220BC272EDB28008DC1F5 /* udp.h in Headers */,
-				B2C220C8272EDB28008DC1F5 /* lwIP.h in Headers */,
-				B2C2208E272EDB28008DC1F5 /* autoip.h in Headers */,
-				B2C220B4272EDB28008DC1F5 /* mdns_priv.h in Headers */,
-				B2C22099272EDB28008DC1F5 /* opt.h in Headers */,
-				B2C220A8272EDB28008DC1F5 /* snmpv3.h in Headers */,
-				B2C22082272EDB28008DC1F5 /* ip4_addr.h in Headers */,
-				B2C220A9272EDB28008DC1F5 /* netbiosns_opts.h in Headers */,
-				B2C220AC272EDB28008DC1F5 /* mdns.h in Headers */,
-				B2C220B1272EDB28008DC1F5 /* snmp_table.h in Headers */,
-				B2C2207C272EDB28008DC1F5 /* timeouts.h in Headers */,
-				B2C220C4272EDB28008DC1F5 /* lwipopts.h in Headers */,
-				B2C220BB272EDB28008DC1F5 /* stats.h in Headers */,
-				B2C22087272EDB28008DC1F5 /* nd6.h in Headers */,
-				B2C2207A272EDB28008DC1F5 /* ip4.h in Headers */,
-				B2C22086272EDB28008DC1F5 /* tcp.h in Headers */,
-				B2C220A3272EDB28008DC1F5 /* dhcp6.h in Headers */,
-				B2C2209C272EDB28008DC1F5 /* sys.h in Headers */,
-				B2C2209A272EDB28008DC1F5 /* inet_chksum.h in Headers */,
-				B2C2208F272EDB28008DC1F5 /* ip6.h in Headers */,
-				B2C22078272EDB28008DC1F5 /* debug.h in Headers */,
-				B2C220AF272EDB28008DC1F5 /* tftp_server.h in Headers */,
-				B2C220B2272EDB28008DC1F5 /* httpd_opts.h in Headers */,
-				B2C22084272EDB28008DC1F5 /* autoip.h in Headers */,
-				B2C22074272EDB28008DC1F5 /* err.h in Headers */,
-				B2C220C1272EDB28008DC1F5 /* lowpan6_opts.h in Headers */,
-				B2C220AB272EDB28008DC1F5 /* snmp_mib2.h in Headers */,
-				B2C2207E272EDB28008DC1F5 /* ip4_frag.h in Headers */,
-				B2C22090272EDB28008DC1F5 /* icmp6.h in Headers */,
-				B2C220BA272EDB28008DC1F5 /* sntp_opts.h in Headers */,
-				B2C220B8272EDB28008DC1F5 /* mdns_opts.h in Headers */,
-				B2C22072272EDB27008DC1F5 /* tcp.h in Headers */,
-				B2C22091272EDB28008DC1F5 /* ip.h in Headers */,
-				B2C22092272EDB28008DC1F5 /* udp.h in Headers */,
-				B2C220AA272EDB28008DC1F5 /* tftp_opts.h in Headers */,
-				B2C2209B272EDB28008DC1F5 /* ip6.h in Headers */,
-				B2C220A4272EDB28008DC1F5 /* sntp.h in Headers */,
-				B2C22075272EDB28008DC1F5 /* etharp.h in Headers */,
-				B2C2208D272EDB28008DC1F5 /* dhcp.h in Headers */,
-				B2C220B6272EDB28008DC1F5 /* mqtt.h in Headers */,
-				B2C220AE272EDB28008DC1F5 /* snmp_core.h in Headers */,
-				B2C22089272EDB28008DC1F5 /* igmp.h in Headers */,
-				B2C220BF272EDB28008DC1F5 /* etharp.h in Headers */,
-				B2C22096272EDB28008DC1F5 /* memp_priv.h in Headers */,
-				B2C2207B272EDB28008DC1F5 /* icmp.h in Headers */,
-				B2C220BD272EDB28008DC1F5 /* arch.h in Headers */,
-				B2C2208A272EDB28008DC1F5 /* ip4.h in Headers */,
-				B2C220C3272EDB28008DC1F5 /* cc.h in Headers */,
-				B2C22097272EDB28008DC1F5 /* memp_std.h in Headers */,
-				B2C22085272EDB28008DC1F5 /* memp.h in Headers */,
-				B2C220A1272EDB28008DC1F5 /* ip.h in Headers */,
-				B2C22095272EDB28008DC1F5 /* tcp_priv.h in Headers */,
-				B2C220BE272EDB28008DC1F5 /* mld6.h in Headers */,
-				B2C22094272EDB28008DC1F5 /* nd6_priv.h in Headers */,
-				B2C220B9272EDB28008DC1F5 /* fs.h in Headers */,
-				B2C2209E272EDB28008DC1F5 /* def.h in Headers */,
-				B2C220AD272EDB28008DC1F5 /* netbiosns.h in Headers */,
-				B2C220C2272EDB28008DC1F5 /* ethernet.h in Headers */,
-				B2C2207F272EDB28008DC1F5 /* ip6_addr.h in Headers */,
-				B2C22079272EDB28008DC1F5 /* ethip6.h in Headers */,
-				B2C220A5272EDB28008DC1F5 /* snmp_opts.h in Headers */,
-				B2C220C0272EDB28008DC1F5 /* lowpan6.h in Headers */,
-				B2C22077272EDB28008DC1F5 /* netif.h in Headers */,
-				B2C22076272EDB28008DC1F5 /* igmp.h in Headers */,
-				B2C220A7272EDB28008DC1F5 /* snmp_scalar.h in Headers */,
-				B2C21FBF272EDAC5008DC1F5 /* ZPTCPIPStack.h in Headers */,
-				B2C22083272EDB28008DC1F5 /* dhcp.h in Headers */,
-				B2C2209F272EDB28008DC1F5 /* mem.h in Headers */,
-				B2C22093272EDB28008DC1F5 /* mld6.h in Headers */,
-				B2C22081272EDB28008DC1F5 /* ip6_frag.h in Headers */,
-				B2C220A0272EDB28008DC1F5 /* icmp6.h in Headers */,
-				B2C220B3272EDB28008DC1F5 /* lwiperf.h in Headers */,
-				B2C22071272EDB27008DC1F5 /* pbuf.h in Headers */,
-				B2C22080272EDB28008DC1F5 /* inet.h in Headers */,
-				B2C22073272EDB27008DC1F5 /* nd6.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
